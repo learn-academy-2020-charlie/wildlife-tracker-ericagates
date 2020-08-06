@@ -1,0 +1,2136 @@
+Started GET "/" for ::1 at 2020-08-05 11:14:50 -0700
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (598.6ms)[0m  [1m[35mCREATE DATABASE "animal_tracker_development" ENCODING = 'unicode'[0m
+  [1m[35m (199.1ms)[0m  [1m[35mCREATE DATABASE "animal_tracker_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2020-08-05 11:25:29 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.1ms | Allocations: 295)
+Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 1638)
+
+
+  [1m[35m (19.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7811586953548652820)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAnimals (20200805182707)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (28.7ms)[0m  [1m[35mCREATE TABLE "animals" ("id" bigserial primary key, "common_name" character varying, "latin_name" character varying, "kingdom" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200805182707"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-05 18:28:05.081991"], ["updated_at", "2020-08-05 18:28:05.081991"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7811586953548652820)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7811586953548652820)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (13.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7811586953548652820)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAnimal Create (7.2ms)[0m  [1m[32mINSERT INTO "animals" ("common_name", "latin_name", "kingdom", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["common_name", "Elephant"], ["latin_name", "Loxodonta"], ["kingdom", "Mammalia"], ["created_at", "2020-08-05 20:39:58.068260"], ["updated_at", "2020-08-05 20:39:58.068260"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAnimal Create (0.8ms)[0m  [1m[32mINSERT INTO "animals" ("common_name", "latin_name", "kingdom", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["common_name", "Lizard"], ["latin_name", "Lacertilia"], ["kingdom", "Reptilia"], ["created_at", "2020-08-05 20:53:18.189339"], ["updated_at", "2020-08-05 20:53:18.189339"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAnimal Create (0.8ms)[0m  [1m[32mINSERT INTO "animals" ("common_name", "latin_name", "kingdom", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["common_name", "Tarantula"], ["latin_name", "Theraphosidae"], ["kingdom", "Arachnida"], ["created_at", "2020-08-05 20:54:55.282702"], ["updated_at", "2020-08-05 20:54:55.282702"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-08-05 13:57:04 -0700
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.0ms | Allocations: 295)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 1998)
+
+
+Started GET "/" for ::1 at 2020-08-05 13:58:05 -0700
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.0ms | Allocations: 179)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 819)
+
+
+Started GET "/?content-type=application/json" for ::1 at 2020-08-05 13:58:46 -0700
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"content-type"=>"application/json"}
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 309)
+
+
+Started GET "/animals" for ::1 at 2020-08-05 13:59:03 -0700
+Processing by AnimalsController#index as */*
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms | Allocations: 81316)
+
+
+  
+NameError (undefined local variable or method `students' for #<AnimalsController:0x00007fe541e99688>):
+  
+app/controllers/animals_controller.rb:4:in `index'
+Started GET "/animals" for ::1 at 2020-08-05 14:00:50 -0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#index as */*
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 0.0ms | Allocations: 81393)
+
+
+  
+NameError (undefined local variable or method `students' for #<AnimalsController:0x00007fc6aa9b9b28>):
+  
+app/controllers/animals_controller.rb:4:in `index'
+Started GET "/animals" for ::1 at 2020-08-05 14:01:15 -0700
+Processing by AnimalsController#index as */*
+  [1m[36mAnimal Load (1.0ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 10.0ms | ActiveRecord: 6.1ms | Allocations: 5316)
+
+
+Started GET "/animal/" for ::1 at 2020-08-05 14:02:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/animal"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/animal/1" for ::1 at 2020-08-05 14:02:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/animal/1"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/animal/1" for ::1 at 2020-08-05 14:03:10 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/animal/1"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/animals/1" for ::1 at 2020-08-05 14:03:40 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 7.4ms | Allocations: 5354)
+
+
+Started POST "/animals" for ::1 at 2020-08-05 14:07:18 -0700
+Processing by AnimalsController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/request_forgery_protection.rb:215:in `handle_unverified_request'
+actionpack (6.0.3.2) lib/action_controller/metal/request_forgery_protection.rb:247:in `handle_unverified_request'
+actionpack (6.0.3.2) lib/action_controller/metal/request_forgery_protection.rb:242:in `verify_authenticity_token'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:200:in `block (2 levels) in halting'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:201:in `block in halting'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/animals" for ::1 at 2020-08-05 14:10:41 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#index as */*
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 8.0ms | ActiveRecord: 6.9ms | Allocations: 5318)
+
+
+Started POST "/animals" for ::1 at 2020-08-05 14:11:19 -0700
+Processing by AnimalsController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/request_forgery_protection.rb:215:in `handle_unverified_request'
+actionpack (6.0.3.2) lib/action_controller/metal/request_forgery_protection.rb:247:in `handle_unverified_request'
+actionpack (6.0.3.2) lib/action_controller/metal/request_forgery_protection.rb:242:in `verify_authenticity_token'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:200:in `block (2 levels) in halting'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:201:in `block in halting'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/animals" for ::1 at 2020-08-05 14:12:28 -0700
+Processing by AnimalsController#create as */*
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 778)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: animal):
+  
+app/controllers/animals_controller.rb:23:in `animal_params'
+app/controllers/animals_controller.rb:13:in `create'
+Started POST "/animals" for ::1 at 2020-08-05 14:14:25 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#create as */*
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms | Allocations: 828)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: animal):
+  
+app/controllers/animals_controller.rb:23:in `animal_params'
+app/controllers/animals_controller.rb:13:in `create'
+Started POST "/animals" for ::1 at 2020-08-05 14:14:48 -0700
+Processing by AnimalsController#create as */*
+  Parameters: {"animal"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 2.6ms | Allocations: 501)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: animal):
+  
+app/controllers/animals_controller.rb:23:in `animal_params'
+app/controllers/animals_controller.rb:13:in `create'
+Started POST "/animals" for ::1 at 2020-08-05 14:15:13 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#create as */*
+  Parameters: {"animal"=>{}}
+Completed 400 Bad Request in 3ms (ActiveRecord: 2.8ms | Allocations: 569)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: animal):
+  
+app/controllers/animals_controller.rb:23:in `animal_params'
+app/controllers/animals_controller.rb:13:in `create'
+Started POST "/animals" for ::1 at 2020-08-05 14:17:22 -0700
+Processing by AnimalsController#create as */*
+  Parameters: {"animal"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 501)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: animal):
+  
+app/controllers/animals_controller.rb:23:in `animal_params'
+app/controllers/animals_controller.rb:13:in `create'
+Started POST "/animals" for ::1 at 2020-08-05 14:21:01 -0700
+Processing by AnimalsController#create as */*
+  Parameters: {"common_name"=>"Dolphin", "latin_name"=>"Delphinus", "kingdom"=>"Mammalia", "animal"=>{"common_name"=>"Dolphin", "latin_name"=>"Delphinus", "kingdom"=>"Mammalia"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/animals_controller.rb:13:in `create'
+  [1m[36mAnimal Create (15.0ms)[0m  [1m[32mINSERT INTO "animals" ("common_name", "latin_name", "kingdom", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["common_name", "Dolphin"], ["latin_name", "Delphinus"], ["kingdom", "Mammalia"], ["created_at", "2020-08-05 21:21:01.558136"], ["updated_at", "2020-08-05 21:21:01.558136"]]
+  ↳ app/controllers/animals_controller.rb:13:in `create'
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/animals_controller.rb:13:in `create'
+Completed 200 OK in 41ms (Views: 2.0ms | ActiveRecord: 21.7ms | Allocations: 6019)
+
+
+Started GET "/animals" for ::1 at 2020-08-05 14:21:15 -0700
+Processing by AnimalsController#index as */*
+  [1m[36mAnimal Load (13.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 3.3ms | ActiveRecord: 13.6ms | Allocations: 1463)
+
+
+Started GET "/animals" for ::1 at 2020-08-05 14:23:14 -0700
+Processing by AnimalsController#index as */*
+  [1m[36mAnimal Load (2.0ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 2.0ms | Allocations: 1408)
+
+
+Started DELETE "/animal/4" for ::1 at 2020-08-05 14:28:13 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/animal/4"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/animals/4" for ::1 at 2020-08-05 14:28:54 -0700
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for AnimalsController):
+  
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/animals/4" for ::1 at 2020-08-05 14:29:20 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for AnimalsController):
+  
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/animals/4" for ::1 at 2020-08-05 14:31:16 -0700
+Processing by AnimalsController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:22:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/animals_controller.rb:23:in `destroy'
+  [1m[36mAnimal Destroy (2.3ms)[0m  [1m[31mDELETE FROM "animals" WHERE "animals"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/animals_controller.rb:23:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/animals_controller.rb:23:in `destroy'
+Completed 200 OK in 41ms (Views: 0.7ms | ActiveRecord: 21.5ms | Allocations: 7227)
+
+
+Started GET "/animals" for ::1 at 2020-08-05 14:31:29 -0700
+Processing by AnimalsController#index as */*
+  [1m[36mAnimal Load (2.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 2.3ms | Allocations: 1290)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7811586953548652820)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSightings (20200805213312)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "sightings" ("id" bigserial primary key, "date" timestamp, "latitude" character varying, "longitude" character varying, "animal_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200805213312"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7811586953548652820)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/animals" for ::1 at 2020-08-05 14:50:59 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#index as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1061)
+
+
+  
+SyntaxError (/Users/learnacademy/Desktop/week-6/wildlife-tracker-ericagates/animal_tracker/app/models/animal.rb:2: syntax error, unexpected ':', expecting `end'
+    has_many: sightings
+            ^
+):
+  
+app/models/animal.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/animal.rb:2: syntax error, unexpected ':', expecting `end'
+app/models/animal.rb:2: syntax error, unexpected ':', expecting `end'
+app/controllers/animals_controller.rb:3:in `index'
+Started GET "/animals" for ::1 at 2020-08-05 14:52:41 -0700
+Processing by AnimalsController#index as */*
+  [1m[36mAnimal Load (0.9ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 31ms (Views: 14.4ms | ActiveRecord: 6.3ms | Allocations: 6299)
+
+
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSighting Load (1.8ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSighting Create (2.3ms)[0m  [1m[32mINSERT INTO "sightings" ("date", "latitude", "longitude", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2020-08-05 00:00:00"], ["latitude", "lat"], ["longitude", "long"], ["animal_id", 1], ["created_at", "2020-08-05 22:00:48.873478"], ["updated_at", "2020-08-05 22:00:48.873478"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/sightings" for ::1 at 2020-08-05 15:01:07 -0700
+Processing by SightingsController#index as */*
+  [1m[36mSighting Load (6.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 6.3ms | ActiveRecord: 12.9ms | Allocations: 5700)
+
+
+Started GET "/sighting/1" for ::1 at 2020-08-05 15:02:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sighting/1"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sightings" for ::1 at 2020-08-05 15:02:54 -0700
+Processing by SightingsController#index as */*
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1062)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-05 15:03:04 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 1242)
+
+
+Started GET "/sightings/1" for ::1 at 2020-08-05 15:03:08 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 951)
+
+
+Started POST "/sightings" for ::1 at 2020-08-05 15:05:08 -0700
+Processing by SightingsController#create as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2328)
+
+
+  
+NameError (uninitialized constant SightingsController::Sightings):
+  
+app/controllers/sightings_controller.rb:13:in `create'
+Started POST "/sightings" for ::1 at 2020-08-05 15:06:28 -0700
+Processing by SightingsController#create as */*
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 932)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sighting):
+  
+app/controllers/sightings_controller.rb:33:in `sighting_params'
+app/controllers/sightings_controller.rb:13:in `create'
+Started POST "/sightings" for ::1 at 2020-08-05 15:06:33 -0700
+Processing by SightingsController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 485)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sighting):
+  
+app/controllers/sightings_controller.rb:33:in `sighting_params'
+app/controllers/sightings_controller.rb:13:in `create'
+Started POST "/sightings" for ::1 at 2020-08-05 15:08:01 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SightingsController#create as */*
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms | Allocations: 1315)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sighting):
+  
+app/controllers/sightings_controller.rb:33:in `sighting_params'
+app/controllers/sightings_controller.rb:13:in `create'
+Started POST "/sightings" for ::1 at 2020-08-05 15:08:36 -0700
+Processing by SightingsController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 489)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sighting):
+  
+app/controllers/sightings_controller.rb:33:in `sighting_params'
+app/controllers/sightings_controller.rb:13:in `create'
+Started POST "/sightings" for ::1 at 2020-08-05 15:14:09 -0700
+Processing by SightingsController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 484)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sighting):
+  
+app/controllers/sightings_controller.rb:33:in `sighting_params'
+app/controllers/sightings_controller.rb:13:in `create'
+Started POST "/sightings" for ::1 at 2020-08-05 15:15:18 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SightingsController#create as */*
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms | Allocations: 1315)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sighting):
+  
+app/controllers/sightings_controller.rb:33:in `sighting_params'
+app/controllers/sightings_controller.rb:13:in `create'
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/sightings" for ::1 at 2020-08-05 15:16:42 -0700
+Processing by SightingsController#index as */*
+  [1m[36mSighting Load (0.9ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 18.2ms | ActiveRecord: 5.4ms | Allocations: 5405)
+
+
+Started POST "/sightings" for ::1 at 2020-08-05 15:18:29 -0700
+Processing by SightingsController#create as */*
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 974)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sighting):
+  
+app/controllers/sightings_controller.rb:33:in `sighting_params'
+app/controllers/sightings_controller.rb:13:in `create'
+Started GET "/sightings" for ::1 at 2020-08-05 15:19:06 -0700
+Processing by SightingsController#index as */*
+  [1m[36mSighting Load (0.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 10.4ms | ActiveRecord: 5.9ms | Allocations: 4786)
+
+
+Started GET "/sightings/1" for ::1 at 2020-08-05 15:20:12 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 3136)
+
+
+Started GET "/sightings" for ::1 at 2020-08-05 15:20:18 -0700
+Processing by SightingsController#index as */*
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1063)
+
+
+  [1m[36mAnimal Load (0.9ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSighting Create (0.9ms)[0m  [1m[32mINSERT INTO "sightings" ("date", "latitude", "longitude", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2020-08-04 00:00:00"], ["latitude", "lat2"], ["longitude", "long2"], ["animal_id", 2], ["created_at", "2020-08-05 22:22:08.256829"], ["updated_at", "2020-08-05 22:22:08.256829"]]
+  [1m[35m (26.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/sightings" for ::1 at 2020-08-05 15:22:14 -0700
+Processing by SightingsController#index as */*
+  [1m[36mSighting Load (1.1ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.1ms | Allocations: 1181)
+
+
+Started POST "/sightings" for ::1 at 2020-08-05 15:23:23 -0700
+Processing by SightingsController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 485)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sighting):
+  
+app/controllers/sightings_controller.rb:33:in `sighting_params'
+app/controllers/sightings_controller.rb:13:in `create'
+Started GET "/sightings" for ::1 at 2020-08-05 15:25:22 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SightingsController#index as */*
+  [1m[36mSighting Load (18.0ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 45ms (Views: 11.4ms | ActiveRecord: 25.8ms | Allocations: 6314)
+
+
+Started POST "/sightings" for ::1 at 2020-08-05 15:27:09 -0700
+Processing by SightingsController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 479)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: sighting):
+  
+app/controllers/sightings_controller.rb:33:in `sighting_params'
+app/controllers/sightings_controller.rb:13:in `create'
+Started POST "/sightings" for ::1 at 2020-08-05 15:27:52 -0700
+Processing by SightingsController#create as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "sighting"=>{"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[35m (13.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[36mSighting Create (1.1ms)[0m  [1m[32mINSERT INTO "sightings" ("date", "latitude", "longitude", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2020-08-04 00:00:00"], ["latitude", "lat2"], ["longitude", "long2"], ["animal_id", 2], ["created_at", "2020-08-05 22:27:52.396403"], ["updated_at", "2020-08-05 22:27:52.396403"]]
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+Completed 200 OK in 61ms (Views: 0.4ms | ActiveRecord: 19.9ms | Allocations: 12680)
+
+
+Started GET "/sightings" for ::1 at 2020-08-05 15:28:51 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "sighting"=>{"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (2.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 2.6ms | Allocations: 1332)
+
+
+Started DELETE "/sightings/2" for ::1 at 2020-08-05 15:29:10 -0700
+Processing by SightingsController#destroy as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "id"=>"2", "sighting"=>{"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (0.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:22:in `destroy'
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sightings_controller.rb:23:in `destroy'
+  [1m[36mSighting Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sightings" WHERE "sightings"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/sightings_controller.rb:23:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sightings_controller.rb:23:in `destroy'
+Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 3.8ms | Allocations: 2841)
+
+
+Started GET "/sightings/2" for ::1 at 2020-08-05 15:29:19 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "id"=>"2", "sighting"=>{"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (1.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 1.3ms | Allocations: 1028)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sighting with 'id'=2):
+  
+app/controllers/sightings_controller.rb:8:in `show'
+Started GET "/sightings" for ::1 at 2020-08-05 15:29:21 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "sighting"=>{"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (0.7ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.7ms | Allocations: 1196)
+
+
+Started GET "/animals" for ::1 at 2020-08-05 15:29:56 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "animal"=>{}}
+  [1m[36mAnimal Load (14.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 3.5ms | ActiveRecord: 14.2ms | Allocations: 1279)
+
+
+Started GET "/animal/1" for ::1 at 2020-08-05 15:30:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/animal/1"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/animals/1" for ::1 at 2020-08-05 15:30:12 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (25.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+Completed 200 OK in 29ms (Views: 0.3ms | ActiveRecord: 25.2ms | Allocations: 940)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-05 16:05:58 -0700
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.8ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  ↳ app/controllers/animals_controller.rb:10:in `show'
+Completed 200 OK in 37ms (Views: 8.6ms | ActiveRecord: 14.5ms | Allocations: 9878)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-05 16:06:45 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 8.4ms | Allocations: 4564)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-05 16:08:25 -0700
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 7.1ms | Allocations: 5678)
+
+
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/sightings" for ::1 at 2020-08-05 16:10:49 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "sighting"=>{"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 4.0ms | Allocations: 4707)
+
+
+Started GET "/sighting/1" for ::1 at 2020-08-05 16:11:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sighting/1"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sightings/1" for ::1 at 2020-08-05 16:11:46 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "id"=>"1", "sighting"=>{"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 1025)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-05 16:12:36 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-08-04T00:00:00.000Z", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.8ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.7ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  ↳ app/controllers/animals_controller.rb:13:in `block (2 levels) in show'
+Completed 200 OK in 32ms (Views: 8.5ms | ActiveRecord: 21.2ms | Allocations: 10085)
+
+
+Started POST "/sightings" for ::1 at 2020-08-05 16:16:37 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+            "date": "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at ': "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,'):
+  
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:114:in `rescue in parse_formatted_parameters'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:110:in `parse_formatted_parameters'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:389:in `block in POST'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch_header'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:388:in `POST'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:55:in `parameters'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:278:in `_wrapper_enabled?'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:244:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+            "date": "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,
+Started GET "/sightings" for ::1 at 2020-08-05 16:16:55 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+            "date": "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at ': "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,'):
+  
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:114:in `rescue in parse_formatted_parameters'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:110:in `parse_formatted_parameters'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:389:in `block in POST'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch_header'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:388:in `POST'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:55:in `parameters'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:278:in `_wrapper_enabled?'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:244:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+            "date": "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,
+Started GET "/sightings" for ::1 at 2020-08-05 16:17:06 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+            "date": "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at ': "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,'):
+  
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:114:in `rescue in parse_formatted_parameters'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:110:in `parse_formatted_parameters'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:389:in `block in POST'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch_header'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:388:in `POST'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:55:in `parameters'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:278:in `_wrapper_enabled?'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:244:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+            "date": "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,
+Started GET "/sightings" for ::1 at 2020-08-05 16:17:29 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+            "date": "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at ': "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,'):
+  
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:114:in `rescue in parse_formatted_parameters'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:110:in `parse_formatted_parameters'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:389:in `block in POST'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch_header'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:388:in `POST'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:55:in `parameters'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:278:in `_wrapper_enabled?'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:244:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+            "date": "2020-07-31",
+            "latitude": "lat4",
+            "longitude": "long4",
+            "animal_id": 1,
+Started POST "/sightings" for ::1 at 2020-08-05 16:19:22 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SightingsController#create as */*
+  Parameters: {"date"=>"2020-07-31", "latitude"=>"lat4", "longitude"=>"long4", "animal_id"=>1, "sighting"=>{"date"=>"2020-07-31", "latitude"=>"lat4", "longitude"=>"long4", "animal_id"=>1}}
+  [1m[35m (13.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[36mSighting Create (1.3ms)[0m  [1m[32mINSERT INTO "sightings" ("date", "latitude", "longitude", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2020-07-31 00:00:00"], ["latitude", "lat4"], ["longitude", "long4"], ["animal_id", 1], ["created_at", "2020-08-05 23:19:22.348904"], ["updated_at", "2020-08-05 23:19:22.348904"]]
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+Completed 200 OK in 66ms (Views: 0.5ms | ActiveRecord: 26.2ms | Allocations: 14231)
+
+
+Started GET "/sightings" for ::1 at 2020-08-05 16:19:33 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-07-31", "latitude"=>"lat4", "longitude"=>"long4", "animal_id"=>1, "sighting"=>{"date"=>"2020-07-31", "latitude"=>"lat4", "longitude"=>"long4", "animal_id"=>1}}
+  [1m[36mSighting Load (1.7ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 1.7ms | Allocations: 1381)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-05 16:19:47 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-07-31", "latitude"=>"lat4", "longitude"=>"long4", "animal_id"=>1, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.2ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  ↳ app/controllers/animals_controller.rb:13:in `block (2 levels) in show'
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.6ms | Allocations: 2161)
+
+
+  [1m[36mSighting Load (17.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/animals/1" for ::1 at 2020-08-05 16:35:49 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/animals/1"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/animals/1" for ::1 at 2020-08-05 16:57:01 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/animals/1"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/animals/1" for ::1 at 2020-08-05 16:57:27 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/week-6/wildlife-tracker-ericagates/animal_tracker/app/controllers/animals_controller.rb:61: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/animals_controller.rb:61: syntax error, unexpected `end', expecting end-of-input
+app/controllers/animals_controller.rb:61: syntax error, unexpected `end', expecting end-of-input
+app/controllers/animals_controller.rb:61: syntax error, unexpected `end', expecting end-of-input
+Started GET "/animals/1" for ::1 at 2020-08-05 16:57:49 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-07-31", "latitude"=>"lat5", "longitude"=>"long6", "animal_id"=>1, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.8ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  ↳ app/controllers/animals_controller.rb:13:in `block (2 levels) in show'
+Completed 200 OK in 54ms (Views: 8.1ms | ActiveRecord: 38.2ms | Allocations: 10210)
+
+
+Started GET "/animals/" for ::1 at 2020-08-05 16:57:59 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"date"=>"2020-07-31", "latitude"=>"lat5", "longitude"=>"long6", "animal_id"=>1, "animal"=>{}}
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.7ms | Allocations: 1288)
+
+
+Started PUT "/animals/" for ::1 at 2020-08-05 16:59:19 -0700
+  
+ActionController::RoutingError (No route matches [PUT] "/animals"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started PUT "/animals/3" for ::1 at 2020-08-05 17:00:20 -0700
+Processing by AnimalsController#update as */*
+  Parameters: {"common_name"=>"Tarantula", "latin_name"=>"Theraphosidae", "kingdom"=>"Arachnidas", "id"=>"3", "animal"=>{"common_name"=>"Tarantula", "latin_name"=>"Theraphosidae", "kingdom"=>"Arachnidas"}}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:42:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/animals_controller.rb:43:in `update'
+  [1m[36mAnimal Update (2.0ms)[0m  [1m[33mUPDATE "animals" SET "kingdom" = $1, "updated_at" = $2 WHERE "animals"."id" = $3[0m  [["kingdom", "Arachnidas"], ["updated_at", "2020-08-06 00:00:20.661835"], ["id", 3]]
+  ↳ app/controllers/animals_controller.rb:43:in `update'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/animals_controller.rb:43:in `update'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 4.2ms | Allocations: 3514)
+
+
+Started PUT "/animals/3" for ::1 at 2020-08-05 17:00:25 -0700
+Processing by AnimalsController#update as */*
+  Parameters: {"common_name"=>"Tarantula", "latin_name"=>"Theraphosidae", "kingdom"=>"Arachnida", "id"=>"3", "animal"=>{"common_name"=>"Tarantula", "latin_name"=>"Theraphosidae", "kingdom"=>"Arachnida"}}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:42:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/animals_controller.rb:43:in `update'
+  [1m[36mAnimal Update (0.5ms)[0m  [1m[33mUPDATE "animals" SET "kingdom" = $1, "updated_at" = $2 WHERE "animals"."id" = $3[0m  [["kingdom", "Arachnida"], ["updated_at", "2020-08-06 00:00:25.359290"], ["id", 3]]
+  ↳ app/controllers/animals_controller.rb:43:in `update'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/animals_controller.rb:43:in `update'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 3292)
+
+
+Started GET "/sightings/3" for ::1 at 2020-08-05 17:00:34 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"common_name"=>"Tarantula", "latin_name"=>"Theraphosidae", "kingdom"=>"Arachnida", "id"=>"3", "sighting"=>{}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 975)
+
+
+Started GET "/sightings/" for ::1 at 2020-08-05 17:00:58 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"common_name"=>"Tarantula", "latin_name"=>"Theraphosidae", "kingdom"=>"Arachnida", "sighting"=>{}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1316)
+
+
+Started PUT "/sightings/1" for ::1 at 2020-08-05 17:02:16 -0700
+Processing by SightingsController#update as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"1", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:32:in `update'
+  [1m[35m (13.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sightings_controller.rb:33:in `update'
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:33:in `update'
+  [1m[36mSighting Update (0.7ms)[0m  [1m[33mUPDATE "sightings" SET "latitude" = $1, "longitude" = $2, "updated_at" = $3 WHERE "sightings"."id" = $4[0m  [["latitude", "lat1"], ["longitude", "long1"], ["updated_at", "2020-08-06 00:02:16.857475"], ["id", 1]]
+  ↳ app/controllers/sightings_controller.rb:33:in `update'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sightings_controller.rb:33:in `update'
+Completed 200 OK in 41ms (Views: 0.3ms | ActiveRecord: 16.9ms | Allocations: 8609)
+
+
+Started GET "/sightings/1" for ::1 at 2020-08-05 17:02:24 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"1", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 850)
+
+
+Started GET "/sightings/1" for ::1 at 2020-08-05 17:02:31 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"1", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 862)
+
+
+Started GET "/sightings/" for ::1 at 2020-08-05 17:02:33 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (13.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 2.0ms | ActiveRecord: 13.6ms | Allocations: 1315)
+
+
+Started GET "/sightings/" for ::1 at 2020-08-05 17:05:43 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 7.6ms | ActiveRecord: 5.3ms | Allocations: 5496)
+
+
+Started GET "/sightings/%222020-08-04%22" for ::1 at 2020-08-05 17:06:24 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"\"2020-08-04\"", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.2ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms | Allocations: 1210)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sighting with 'id'="2020-08-04"):
+  
+app/controllers/sightings_controller.rb:8:in `show'
+Started GET "/sightings/" for ::1 at 2020-08-05 17:06:39 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.9ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.9ms | Allocations: 1453)
+
+
+Started GET "/sightings/" for ::1 at 2020-08-05 17:21:32 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 12.1ms | ActiveRecord: 5.6ms | Allocations: 5496)
+
+
+Started GET "/sightings/2020-08-03/2020-08-06" for ::1 at 2020-08-05 17:21:50 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "start_date"=>"2020-08-03", "end_date"=>"2020-08-06", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 1273)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column sightings.start_date does not exist
+LINE 1: SELECT "sightings".* FROM "sightings" WHERE "sightings"."sta...
+                                                    ^
+):
+  
+app/controllers/sightings_controller.rb:4:in `index'
+Started GET "/sightings/2020-08-03/2020-08-06" for ::1 at 2020-08-05 17:22:46 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "start_date"=>"2020-08-03", "end_date"=>"2020-08-06", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2020-08-03 00:00:00"], ["date", "2020-08-06 00:00:00"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 3.4ms | Allocations: 4807)
+
+
+Started GET "/sightings/2020-07-31/2020-08-04" for ::1 at 2020-08-05 17:23:04 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "start_date"=>"2020-07-31", "end_date"=>"2020-08-04", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2020-07-31 00:00:00"], ["date", "2020-08-04 00:00:00"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1336)
+
+
+Started GET "/sightings/" for ::1 at 2020-08-05 17:23:21 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1404)
+
+
+Started GET "/animals/" for ::1 at 2020-08-05 17:26:46 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "animal"=>{}}
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 3.6ms | Allocations: 4257)
+
+
+Started GET "/animals/" for ::1 at 2020-08-05 17:32:04 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "animal"=>{}}
+No template found for AnimalsController#index, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 3.0ms | Allocations: 1795)
+
+
+Started GET "/animals/" for ::1 at 2020-08-05 17:32:10 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "animal"=>{}}
+No template found for AnimalsController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 204)
+
+
+Started GET "/animals/" for ::1 at 2020-08-05 17:32:20 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "animal"=>{}}
+No template found for AnimalsController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 204)
+
+
+Started GET "/animals/" for ::1 at 2020-08-05 17:32:24 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "animal"=>{}}
+No template found for AnimalsController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 204)
+
+
+Started GET "/animals/" for ::1 at 2020-08-05 17:33:02 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "animal"=>{}}
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 2.4ms | Allocations: 81294)
+
+
+  
+NameError (undefined local variable or method `animals' for #<AnimalsController:0x00007f91d75849c0>
+Did you mean?  animals_url):
+  
+app/controllers/animals_controller.rb:4:in `index'
+Started GET "/animals/" for ::1 at 2020-08-05 17:33:33 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "animal"=>{}}
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 4.5ms | Allocations: 4549)
+
+
+Started GET "/sightings" for ::1 at 2020-08-05 17:33:42 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.6ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 3.3ms | Allocations: 5153)
+
+
+Started GET "/sightings/2020-07-31" for ::1 at 2020-08-05 17:34:19 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"2020-07-31", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.2ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 2020], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms | Allocations: 1209)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sighting with 'id'=2020-07-31):
+  
+app/controllers/sightings_controller.rb:8:in `show'
+Started GET "/sightings/2020-07-31/2020-08-06" for ::1 at 2020-08-05 17:34:45 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "start_date"=>"2020-07-31", "end_date"=>"2020-08-06", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2020-07-31 00:00:00"], ["date", "2020-08-06 00:00:00"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1501)
+
+
+Started GET "/sightings/2020-07-31/2020-08-06" for ::1 at 2020-08-05 17:41:11 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "start_date"=>"2020-07-31", "end_date"=>"2020-08-06", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (1.0ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2020-07-31 00:00:00"], ["date", "2020-08-06 00:00:00"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.3ms | Allocations: 1613)
+
+
+Started GET "/sightings/" for ::1 at 2020-08-05 17:41:16 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1402)
+
+
+Started GET "/sightings/" for ::1 at 2020-08-06 09:20:38 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (3.7ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 13.6ms | ActiveRecord: 34.2ms | Allocations: 5504)
+
+
+Started GET "/sightings/1" for ::1 at 2020-08-06 09:20:44 -0700
+Processing by SightingsController#show as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"1", "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (0.8ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:8:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 1033)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-06 09:20:49 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  ↳ app/controllers/animals_controller.rb:13:in `block (2 levels) in show'
+Completed 200 OK in 13ms (Views: 2.6ms | ActiveRecord: 2.9ms | Allocations: 5077)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-06 09:21:37 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  ↳ app/controllers/animals_controller.rb:11:in `show'
+Completed 200 OK in 32ms (Views: 11.5ms | ActiveRecord: 11.5ms | Allocations: 8942)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-06 09:22:39 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.8ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  ↳ app/controllers/animals_controller.rb:11:in `show'
+Completed 200 OK in 34ms (Views: 9.9ms | ActiveRecord: 12.2ms | Allocations: 10182)
+
+
+Started GET "/animals/2" for ::1 at 2020-08-06 09:22:45 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "id"=>"2", "animal"=>{}}
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (9.7ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 2]]
+  ↳ app/controllers/animals_controller.rb:11:in `show'
+Completed 200 OK in 16ms (Views: 2.4ms | ActiveRecord: 10.2ms | Allocations: 1862)
+
+
+Started GET "/sightings" for ::1 at 2020-08-06 09:58:10 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1, "sighting"=>{"date"=>"2020-08-05T00:00:00.000Z", "latitude"=>"lat1", "longitude"=>"long1", "animal_id"=>1}}
+  [1m[36mSighting Load (1.1ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.1ms | Allocations: 1541)
+
+
+Started POST "/sightings" for ::1 at 2020-08-06 09:59:19 -0700
+Processing by SightingsController#create as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "sighting"=>{"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[36mSighting Create (0.7ms)[0m  [1m[32mINSERT INTO "sightings" ("date", "latitude", "longitude", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2019-03-12 00:00:00"], ["latitude", "lat2"], ["longitude", "long2"], ["animal_id", 2], ["created_at", "2020-08-06 16:59:19.811676"], ["updated_at", "2020-08-06 16:59:19.811676"]]
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 3.9ms | Allocations: 6051)
+
+
+Started GET "/sightings" for ::1 at 2020-08-06 09:59:26 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "sighting"=>{"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (2.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 2.5ms | Allocations: 1554)
+
+
+Started GET "/sightings/2020-07-31/2020-08-04" for ::1 at 2020-08-06 10:34:09 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SightingsController#index as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "start_date"=>"2020-07-31", "end_date"=>"2020-08-04", "sighting"=>{"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (1.1ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2020-07-31 00:00:00"], ["date", "2020-08-04 00:00:00"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 12.5ms | ActiveRecord: 7.5ms | Allocations: 5498)
+
+
+Started GET "/sightings/2020-07-31/2020-08-0" for ::1 at 2020-08-06 10:34:19 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "start_date"=>"2020-07-31", "end_date"=>"2020-08-0", "sighting"=>{"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (2.0ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2020-07-31 00:00:00"], ["date", nil]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 2.0ms | Allocations: 2235)
+
+
+Started GET "/sightings/2020-07-31/2020-08-05" for ::1 at 2020-08-06 10:34:22 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "start_date"=>"2020-07-31", "end_date"=>"2020-08-05", "sighting"=>{"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2020-07-31 00:00:00"], ["date", "2020-08-05 00:00:00"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1488)
+
+
+Started GET "/sightings/2020-07-31/2020-08-06" for ::1 at 2020-08-06 10:34:31 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "start_date"=>"2020-07-31", "end_date"=>"2020-08-06", "sighting"=>{"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2020-07-31 00:00:00"], ["date", "2020-08-06 00:00:00"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1488)
+
+
+Started GET "/sightings/" for ::1 at 2020-08-06 10:34:36 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2, "sighting"=>{"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "longitude"=>"long2", "animal_id"=>2}}
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1561)
+
+
+Started POST "/sightings/" for ::1 at 2020-08-06 11:35:50 -0700
+Processing by SightingsController#create as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "animal_id"=>2, "sighting"=>{"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "animal_id"=>2}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[36mSighting Create (0.7ms)[0m  [1m[32mINSERT INTO "sightings" ("date", "latitude", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["date", "2019-03-12 00:00:00"], ["latitude", "lat2"], ["animal_id", 2], ["created_at", "2020-08-06 18:35:50.407948"], ["updated_at", "2020-08-06 18:35:50.407948"]]
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sightings_controller.rb:13:in `create'
+Completed 200 OK in 40ms (Views: 0.3ms | ActiveRecord: 11.6ms | Allocations: 10318)
+
+
+Started GET "/animals" for ::1 at 2020-08-06 11:48:48 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#index as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "animal_id"=>2, "animal"=>{"id"=>3}}
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 7.1ms | ActiveRecord: 6.6ms | Allocations: 4566)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-06 11:48:52 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"id"=>"1", "date"=>"2019-03-12", "latitude"=>"lat2", "animal_id"=>2, "animal"=>{"id"=>"1"}}
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  ↳ app/controllers/animals_controller.rb:11:in `show'
+Completed 200 OK in 29ms (Views: 10.6ms | ActiveRecord: 4.2ms | Allocations: 6989)
+
+
+Started GET "/animals/2" for ::1 at 2020-08-06 11:49:51 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#show as */*
+  Parameters: {"id"=>"2", "date"=>"2019-03-12", "latitude"=>"lat2", "animal_id"=>2, "animal"=>{"id"=>"2"}}
+  [1m[36mAnimal Load (0.8ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 2]]
+  ↳ app/controllers/animals_controller.rb:11:in `show'
+Completed 200 OK in 31ms (Views: 8.0ms | ActiveRecord: 9.9ms | Allocations: 10368)
+
+
+Started GET "/animals/1" for ::1 at 2020-08-06 11:50:30 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"id"=>"1", "date"=>"2019-03-12", "latitude"=>"lat2", "animal_id"=>2, "animal"=>{"id"=>"1"}}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", 1]]
+  ↳ app/controllers/animals_controller.rb:11:in `show'
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 0.7ms | Allocations: 1996)
+
+
+Started GET "/animals" for ::1 at 2020-08-06 11:50:41 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"id"=>3, "date"=>"2019-03-12", "latitude"=>"lat2", "animal_id"=>2, "animal"=>{"id"=>3}}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1288)
+
+
+Started GET "/animals" for ::1 at 2020-08-06 11:51:29 -0700
+Processing by AnimalsController#index as */*
+  Parameters: {"common_name"=>"Bear", "kingdom"=>"Mammalia", "animal"=>{"common_name"=>"Bear", "kingdom"=>"Mammalia"}}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/controllers/animals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1287)
+
+
+Started POST "/animals" for ::1 at 2020-08-06 11:51:41 -0700
+Processing by AnimalsController#create as */*
+  Parameters: {"common_name"=>"Bear", "kingdom"=>"Mammalia", "animal"=>{"common_name"=>"Bear", "kingdom"=>"Mammalia"}}
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3969)
+
+
+Started POST "/animals" for ::1 at 2020-08-06 13:46:42 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#create as */*
+  Parameters: {"common_name"=>"Bear", "latin_name"=>"Ursidae", "kingdom"=>"Mammalia", "animal"=>{"common_name"=>"Bear", "latin_name"=>"Ursidae", "kingdom"=>"Mammalia"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/animals_controller.rb:15:in `create'
+  [1m[36mAnimal Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "animals" WHERE "animals"."common_name" = $1 LIMIT $2[0m  [["common_name", "Bear"], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:15:in `create'
+  [1m[36mAnimal Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "animals" WHERE "animals"."latin_name" = $1 LIMIT $2[0m  [["latin_name", "Ursidae"], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:15:in `create'
+  [1m[36mAnimal Create (1.0ms)[0m  [1m[32mINSERT INTO "animals" ("common_name", "latin_name", "kingdom", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["common_name", "Bear"], ["latin_name", "Ursidae"], ["kingdom", "Mammalia"], ["created_at", "2020-08-06 20:46:42.499032"], ["updated_at", "2020-08-06 20:46:42.499032"]]
+  ↳ app/controllers/animals_controller.rb:15:in `create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/animals_controller.rb:15:in `create'
+  [1m[36mAnimal Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "animals" WHERE "animals"."common_name" = $1 AND "animals"."id" != $2 LIMIT $3[0m  [["common_name", "Bear"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:16:in `create'
+  [1m[36mAnimal Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "animals" WHERE "animals"."latin_name" = $1 AND "animals"."id" != $2 LIMIT $3[0m  [["latin_name", "Ursidae"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:16:in `create'
+Completed 200 OK in 32ms (Views: 0.5ms | ActiveRecord: 10.8ms | Allocations: 10497)
+
+
+Started POST "/animals" for ::1 at 2020-08-06 13:46:53 -0700
+Processing by AnimalsController#create as */*
+  Parameters: {"common_name"=>"Bear", "latin_name"=>"", "kingdom"=>"Mammalia", "animal"=>{"common_name"=>"Bear", "latin_name"=>"", "kingdom"=>"Mammalia"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/animals_controller.rb:15:in `create'
+  [1m[36mAnimal Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "animals" WHERE "animals"."common_name" = $1 LIMIT $2[0m  [["common_name", "Bear"], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:15:in `create'
+  [1m[36mAnimal Exists? (3.9ms)[0m  [1m[34mSELECT 1 AS one FROM "animals" WHERE "animals"."latin_name" = $1 LIMIT $2[0m  [["latin_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:15:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/animals_controller.rb:15:in `create'
+  [1m[36mAnimal Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "animals" WHERE "animals"."common_name" = $1 LIMIT $2[0m  [["common_name", "Bear"], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:16:in `create'
+  [1m[36mAnimal Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "animals" WHERE "animals"."latin_name" = $1 LIMIT $2[0m  [["latin_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:16:in `create'
+Completed 200 OK in 36ms (Views: 0.7ms | ActiveRecord: 6.1ms | Allocations: 8372)
+
+
